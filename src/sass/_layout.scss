@@ -1,0 +1,100 @@
+@use "base";
+
+body {
+  background-color: base.$color-background-primary;
+  font-family: base.$font-title;
+  color: base.$color-text-primary;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7em;
+}
+h1 {
+  background-color: base.$color-background-secondary;
+  padding: 2%;
+  border: 5px solid base.$color-background-quaternary;
+  border-radius: 10px;
+  font-size: 2.5rem;
+}
+h2 {
+  text-align: center;
+}
+p {
+  font-family: base.$font-content;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: base.$color-background-tertiary;
+  border-bottom: 5px solid base.$color-background-quaternary;
+  img {
+    width: 250px;
+    height: 350px;
+  }
+}
+footer {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  background-color: base.$color-background-secondary;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+#addnewtodo {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+#todoinput {
+  width: 60%;
+  height: 30px;
+}
+#addtodo {
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  height: 50px;
+  width: 20%;
+  min-width: 130px;
+  background-color: base.$color-background-quaternary;
+  color: base.$color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#addtodo:hover {
+  cursor: pointer;
+  background-color: #2a472a;
+}
+#addcomponents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+#todoscontainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  width: 45%;
+}
+#todos {
+  background-color: base.$color-background-tertiary;
+  padding: 2%;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: base.$font-content;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,19 @@
+@use "sass:color";
+
+//Färger
+$color-background-primary: rgb(46, 27, 46);
+$color-background-secondary: color.scale(
+  $color-background-primary,
+  $lightness: -40%
+);
+$color-background-tertiary: color.scale(
+  $color-background-primary,
+  $lightness: 10%
+);
+$color-background-quaternary: color.complement($color-background-primary);
+
+$color-text-primary: white;
+
+//Fonter
+$font-title: "DynaPuff", system-ui;
+$font-content: "Roboto", system-ui;
