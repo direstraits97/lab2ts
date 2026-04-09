@@ -1,7 +1,1 @@
-"use strict";
-
-interface Todo {
-  task: string;
-  completed: boolean;
-  priority: number;
-}
+import { TodoList } from "./TodoList";
