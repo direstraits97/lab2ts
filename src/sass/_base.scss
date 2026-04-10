@@ -19,3 +19,17 @@ $color-error: rgb(112, 12, 12);
 //Fonter
 $font-title: "DynaPuff", system-ui;
 $font-content: "Roboto", system-ui;
+
+//Placeholders
+%flexandcolumn {
+  display: flex;
+  flex-direction: column;
+}
+%centerchild {
+  margin-right: auto;
+  margin-left: auto;
+}
+%flexandalign {
+  display: flex;
+  align-items: center;
+}

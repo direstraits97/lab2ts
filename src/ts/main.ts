@@ -32,6 +32,7 @@ function init(): void {
         errorContainer?.appendChild(errorEl);
       }
       printTodos();
+      todoForm.reset();
     });
   }
   printTodos();

@@ -30,11 +30,11 @@ export class TodoList {
     return this.todos;
   }
 
-  saveToLocalStorage(): void {
+  private saveToLocalStorage(): void {
     localStorage.setItem("todos", JSON.stringify(this.todos));
   }
 
-  loadFromLocalStorage(): void {
+  private loadFromLocalStorage(): void {
     const todosString: string = localStorage.getItem("todos") || "[]";
     const todos: Todo[] = JSON.parse(todosString);
     this.todos = todos;
