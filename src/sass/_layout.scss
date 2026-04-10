@@ -108,5 +108,23 @@ main {
     padding-left: 0;
     font-family: base.$font-content;
     font-size: 1.2rem;
+    li {
+      border: 3px solid base.$color-background-quaternary;
+      background-color: base.$color-background-secondary;
+      padding: 1%;
+      border-radius: 10px;
+    }
   }
+}
+#errorcontainer {
+  p {
+    background-color: base.$color-error;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+.completedtask {
+  text-decoration: line-through;
+  color: rgb(153, 151, 151);
 }

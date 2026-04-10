@@ -26,6 +26,7 @@
         <h2>Lägg till ny att-göra</h2>
         <div id="addnewtodocontainer">
           <form id="addcomponents">
+            <div id="errorcontainer"></div>
             <label for="todoinput">Beskrivning:</label>
             <input type="text" id="todoinput" />
             <label for="priorityinput">
@@ -42,17 +43,7 @@
       <section id="todoscontainer">
         <h2>Att göra:</h2>
         <div id="todos">
-          <ul>
-            <li>
-              <input type="checkbox" />
-              1 - Handla
-            </li>
-            <br />
-            <li>
-              <input type="checkbox" />
-              2 - Gymma
-            </li>
-          </ul>
+          <ul id="todolist"></ul>
         </div>
       </section>
       <footer>
